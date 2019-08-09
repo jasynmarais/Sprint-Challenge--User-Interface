@@ -105,6 +105,23 @@ header .logo {
     align-items: center;
 }
 
+/* Stretch Animation */
+@keyframes slide {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+.jumbo {
+    margin-bottom: 30px;
+    animation-duration: 4s;
+    animation-name: slide;
+    max-width: 100%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
