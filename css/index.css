@@ -218,3 +218,10 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* Footer Underline */
+
+footer nav a:hover {
+    text-decoration: underline;
+    color: crimson;
+}
