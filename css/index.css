@@ -226,3 +226,54 @@ footer nav a {
 footer nav a:hover {
     text-decoration: underline;
     color: crimson;
+}
+
+/* About Styling */
+
+.container.about-page {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.jumbo-about {
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.about-text {
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-content .info {
+    width: 370px;
+    margin: 20px 0;
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    padding-bottom: 14px;
+}
+
+.about-content .info button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid black;
+} 	
