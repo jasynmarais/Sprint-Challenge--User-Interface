@@ -276,4 +276,10 @@ footer nav a:hover {
     background: white;
     border-radius: 5px;
     border: 2px solid black;
-} 	
+}
+
+/* About Content Button Hover */
+.about-content .info button:hover {
+    background: crimson;
+    color: white;
+}
