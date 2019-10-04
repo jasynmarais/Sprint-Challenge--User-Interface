@@ -66,6 +66,40 @@ p {
     line-height: 1.4;
 }
 
+header {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    margin-top: 45px;
+    width: 620px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a:first-child {
+    margin-left: 20px;
+}
+
+header .logo {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
