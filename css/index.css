@@ -66,11 +66,64 @@ p {
     line-height: 1.4;
 }
 
+/* Header Styling */
+header {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    margin-top: 45px;
+    width: 620px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a:first-child {
+    margin-left: 20px;
+}
+
+header .logo {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
+/* Stretch Animation */
+@keyframes slide {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+.jumbo {
+    margin-bottom: 30px;
+    animation-duration: 4s;
+    animation-name: slide;
+    max-width: 100%;
+}
+
+/* Top Content */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -82,9 +135,11 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
+    padding-top: 20px;
     padding-bottom: 20px;  
 }
 
+/* Middle Content */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -112,6 +167,48 @@ p {
     justify-content: center;
 }
 
+/* Box Colours */
+.middle-content .boxes .box.box1 {
+    background: teal;
+}
+
+.middle-content .boxes .box.box2 {
+    background: gold;
+}
+
+.middle-content .boxes .box.box3 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box.box4 {
+    background: coral;
+}
+
+.middle-content .boxes .box.box5 {
+    background: crimson;
+}
+
+.middle-content .boxes .box.box6 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box.box7 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box.box8 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box.box9 {
+    background: indigo;
+}
+
+.middle-content .boxes .box.box10 {
+    background: dodgerblue;
+}
+
+/* Bottom Content */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -126,6 +223,7 @@ p {
     padding-right: 0;
 }
 
+/* Footer */
 footer {
     width: 100%;
     background: black;
@@ -143,4 +241,92 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* Footer Underline */
+footer nav a:hover {
+    text-decoration: underline;
+    color: crimson;
+}
+
+/* About Page Styling */
+.container.about-page {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.jumbo-about {
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.about-text {
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-content .info {
+    width: 370px;
+    margin: 20px 0;
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    padding-bottom: 14px;
+}
+
+.about-content .info button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+/* About Content Button Hover */
+.about-content .info button:hover {
+    background: crimson;
+    color: white;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: crimson;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
